@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
+import { Place } from '../../place.model';
 
 @Component({
   selector: 'app-place-detail',
@@ -8,7 +9,7 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./place-detail.page.scss'],
 })
 export class PlaceDetailPage implements OnInit {
-
+place?:Place;
 
   constructor(private router: Router, private navCtr: NavController) { }
 

@@ -30,10 +30,14 @@ export class PlacesService {
       99.9
     )
   ];
-
+// get All
   get places() {
     return this._places;
   }
 
-  constructor() { }
+  // get by Id
+  getPlace(id: string){
+    return this.places.find (p => p.id === id)
+    }
+    constructor ( ) { }
 }

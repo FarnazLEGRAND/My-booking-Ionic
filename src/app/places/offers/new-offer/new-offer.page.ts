@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Place } from '../../place.model';
 
 @Component({
   selector: 'app-new-offer',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-offer.page.scss'],
 })
 export class NewOfferPage implements OnInit {
-
+newOffer!:Place
   constructor() { }
 
   ngOnInit() {
