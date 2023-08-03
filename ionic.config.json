@@ -1,0 +1,7 @@
+{
+  "name": "my-bookung-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
