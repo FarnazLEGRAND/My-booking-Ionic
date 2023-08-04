@@ -18,7 +18,6 @@ const routes: Routes = [
   },
   {
     path: 'bookings',
-    // apple a canLoad: [AuthGuard] pour verifier login et log out par default boolean=fals
     loadChildren: () => import('./bookings/bookings.module').then( m => m.BookingsPageModule), canLoad: [AuthGuard]
   },
 ];
